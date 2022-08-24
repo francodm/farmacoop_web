@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>Aqualane</title>
+  </head>
+  <body class="font-rubik">
+    <header>
+      <nav id="nav" class="absolute top-0 w-full z-50">
+        <div class="font-medium 2xl:text-lg isolate flex justify-end items-center relative">
+          <a href="index.html"><img class="select-none absolute top-5 lg:top-7 2xl:top-10 left-5 lg:left-10 2xl:left-16 w-36 lg:w-42 xl:w-48 2xl:w-56" src="img/logo-black.svg" alt="Logo farmacoop" /></a>
+          <img id="burger" class="lg:hidden w-7 mx-5 my-5" src="img/menu.svg" alt="menu" />
+          <ul id="menu-options" class="close-menu w-74 lg:w-auto bg-white rounded-b-xl lg:bg-transparent text-right lg:text-center transform lg:transform-none lg:opacity-100 lg:pointer-events-auto absolute lg:relative top-full lg:top-10 2xl:top-16 lg:right-28 xl:right-48 border-t-2 border-t-black lg:flex gap-6 xl:gap-10 px-5">
+            <li class="menu-option pt-5 lg:pt-0 dropdown relative flex flex-row-reverse lg:flex-row group">
+              FARMACOOP<img class="drop transform transition-transform duration-500 lg:rotate-0" src="img/down.svg" />
+              <ul class="hide absolute top-0 lg:top-full left-0 lg:left-0 lg:right-auto text-left font-normal leading-tight min-w-full">
+                <div class="min-w-full rounded-b-lg bg-white lg:bg-transparent">
+                  <a href="cooperative.html"><li class="mt-2 pt-1 pb-3 px-2">AHORA</li></a>
+                  <a href="history.html"><li class="pt-1 pb-3 px-2">HISTORIA</li></a>
+                </div>
+              </ul>
+            </li>
+            <a href="products.html"><li class="menu-option pt-5 lg:pt-0">PRODUCTOS</li></a>
+            <a href="development.html"><li class="menu-option pt-5 lg:pt-0">DESARROLLO</li></a>
+            <li class="menu-option pt-5 lg:pt-0 dropdown relative flex flex-row-reverse lg:flex-row group">
+              SERVICIOS<img class="drop transform transition-transform duration-500 lg:rotate-0" src="img/down.svg" />
+              <ul class="hide absolute top-0 lg:top-full left-0 lg:left-0 lg:right-auto text-left font-normal leading-tight min-w-full">
+                <div class="min-w-full rounded-b-lg bg-white lg:bg-transparent">
+                  <a href="services.html"><li class="mt-2 pt-1 pb-3 px-2">OPERADORES LOGÍSTICOS</li></a>
+                  <a href="product-service.html"><li class="pt-1 pb-3 px-2">SERVICIOS PRODUCTIVOS</li></a>
+                </div>
+              </ul>
+            </li>
+            <a href="contact.html"><li class="menu-option pt-5 lg:pt-0">CONTACTO</li></a>
+            <a class="lg:hidden" href="aqualane.html"><li class="menu-option mt-5 py-2 border-t border-zinc-300">AQUALANE</li></a>
+          </ul>
+          <div class="hidden lg:block h-32 w-32 2xl:w-60 2xl:h-60 absolute top-0 right-0 bg-transparent overflow-hidden">
+            <a href="aqualane.html" class="aqualane absolute top-0 right-0"><img class="aqualane-promo w-20 2xl:w-36" src="img/pomosAqualane.png" alt="Aquealane prop" /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-page">
+      <div class="contact-icon">
+        <a href="https://wa.me/+5491130743155" target="_blank">
+          <figure class="flex justify-center items-center">
+            <img class="isolate" src="img/whatsapp.svg" />
+          </figure>
+        </a>
+      </div>
+      <div class="page-title-container min-h-[55vh]">
+        <h2 class="page-title">Desarrollo</h2>
+        <p class="page-subtitle pb-14">Somos un equipo especializado en la tecnología de <span class="dark-highlight">lateral flow</span>. Contamos con técnicos y profesionales altamente capacitados para <span class="dark-highlight">innovar, analizar e investigar</span> nuevos productos y ofrecer <span class="dark-highlight">soluciones eficientes</span> en materia de salud.</p>
+        <a href="#tell-us" class="link-button">¡Contanos tu idea!</a>
+      </div>
+      <div class="vision-ball z-10 after:-z-10 lg:w-2/3 relative after:content-[''] after:absolute after:top-10 after:bg-farmacoop-light-blue flex justify-center items-center flex-col gap-3 py-20 px-5 lg:p-20 m-auto after:rounded-full after:w-80 after:h-80">
+        <h3 class="lg:text-xl pb-5">Nuestra visión</h3>
+        <p class="isolate text-lg lg:text-2xl font-light max-w-[40rem]">Garantizar productos de alta calidad y alto valor agregado al alcance de toda la comunidad. Generar una amplia gama de productos que puedan <span class="dark-highlight">abastecer la demanda nacional</span> de este tipo de productos.</p>
+      </div>
+      <div id="dev-content" class="dev-content lg:px-32">
+        <div id="dev-cap" class="pins my-20 lg:my-0 px-5 lg:px-0 lg:min-h-screen lg:grid grid-cols-2 gap-40 items-center relative overflow-hidden">
+          <h3 class="text-2xl lg:text-5xl">Capacidades tecnológicas</h3>
+          <div class="line-container">
+            <svg class="line line1" viewBox="-4 0 220 1117" fill="none" preserveAspectRatio="xMidYMax meet">
+              <path id="path-lines" d="M110 0C110 185.243 110 239.878 110 425.12C110 425.12 1 433.351 1 536.39C1 654.366 110 656.5 110 656.5C110 815.552 110 953.948 110 1113" stroke="var(--farmacoop-light-blue)" stroke-width="10" />
+            </svg>
+            <div class="number text-4xl border-2 border-black w-20 h-20 transform -translate-y-3 rounded-full overflow-hidden">
+              <p class="w-full h-full flex justify-center items-center">1</p>
+              <p class="w-full h-full flex justify-center items-center">2</p>
+              <p class="w-full h-full flex justify-center items-center">3</p>
+            </div>
+          </div>
+          <ul id="dev-list" class="dev-list relative lg:min-h-screen">
+            <li class="my-5 lg:my-0 lg:pl-10 transform lg:-translate-y-1/2 lg:absolute lg:top-1/2">
+              <h4 class="lg:text-lg 2xl:text-2xl font-bold pb-2">Planta para escalamiento lateral flow:</h4>
+              <p class="2xl:text-xl">Nuestra planta cuenta con todo el <span class="dark-highlight">equipamiento específico</span> necesario para la producción de esta tecnología.</p>
+            </li>
+            <li class="lg:opacity-0 my-5 lg:my-0 lg:pl-10 transform lg:-translate-y-1/2 lg:absolute lg:top-[60%]">
+              <h4 class="lg:text-lg 2xl:text-2xl font-bold pb-2">Laboratorio equipado para CC:</h4>
+              <p class="2xl:text-xl">Nuestros laboratorios de control de calidad cuentan con equipos especializados que aseguran la <span class="dark-highlight">calidad y confiabilidad</span> de nuestros productos.</p>
+            </li>
+            <li class="lg:opacity-0 my-5 lg:my-0 lg:pl-10 transform lg:-translate-y-1/2 lg:absolute lg:top-[60%]">
+              <h4 class="lg:text-lg 2xl:text-2xl font-bold pb-2">Know how:</h4>
+              <p class="2xl:text-xl">
+                Es un término que puede aplicarse tanto a la parte estratégica como a la parte operativa y técnica de la organización, y en definitiva <span class="dark-highlight">agrupa los conocimientos que se extienden a toda la compañía</span> y que la han llevado al éxito. El know how es algo concreto y secreto que distingue a la empresa de la competencia. El know how es la <span class="dark-highlight">fórmula maestra </span>que distingue a la empresa de la competencia.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div id="dev-flow" class="dev-sect my-20 lg:my-0 px-5 lg:px-0 lg:min-h-screen lg:grid grid-cols-2 gap-40 items-center relative transform lg:-translate-y-5">
+          <div class="line-container flex justify-center items-center">
+            <svg class="line line2" viewBox="-14 0 50 1117" fill="none" preserveAspectRatio="xMidYMax meet">
+              <path
+                d="M14.5264 -0.5C14.5264 114.584 14.5264 293.916 14.5264 409C14.5264 409 29.3873 428.171 30.0264 439.5C30.904 455.057 1.33632 453.922 0.999994 469.5C0.652939 485.575 29.8975 490.922 30.0264 507C30.1464 521.98 0.911141 525.52 0.999285 540.5C1.08656 555.332 30.1606 563.168 30.0264 578C29.8942 592.61 1.84818 597.914 0.999994 612.5C0.0604576 628.657 30.8197 632.835 30.0264 649C29.2994 663.814 2.71754 666.267 0.999285 681C-0.227975 691.523 14.5264 711.5 14.5264 711.5V1114"
+                stroke="var(--farmacoop-light-blue)"
+                stroke-width="10"
+              />
+            </svg>
+          </div>
+          <h3 class="text-2xl lg:text-5xl">¿Qué es el lateral flow?</h3>
+          <p class="my-5 lg:my-0 lg:pl-10 2xl:text-xl">Es una <span class="dark-highlight">técnica para testeo rápido</span>, que consta de un dispositivo de diagnóstico fácil de usar el cual se utiliza para confirmar la presencia o ausencia de un analito objetivo, como patógenos o biomarcadores en humanos o animales. Los inmunoensayos del lateral flow representan un <span class="dark-highlight">método bien establecido</span> y muy apropiado.</p>
+        </div>
+        <div id="dev-products" class="pins dev-sect my-20 lg:my-0 px-5 lg:px-0 lg:min-h-screen lg:grid grid-cols-2 gap-40 items-center relative transform lg:-translate-y-7">
+          <div class="line-container flex justify-center items-center">
+            <svg class="line line3" viewBox="-12 0 185 1117" fill="none" preserveAspectRatio="xMidYMax meet">
+              <path d="M84.5004 0C84.5004 0 84.5004 126.5 135.5 126.5C247.5 126.5 39.9998 267 39.9999 395.5C40 524 152 536.5 152 669C152 801.5 -90.9277 985 39.9999 985C84.5002 985 84.5004 1105.5 84.5004 1105.5" stroke="var(--farmacoop-light-blue)" stroke-width="10" />
+            </svg>
+          </div>
+          <h3 class="text-2xl lg:text-5xl">Nuestros productos</h3>
+          <ul id="prod-list" class="prod-list relative lg:min-h-screen lg:pl-10">
+            <li class="my-5 lg:my-0 lg:pl-10 transform lg:-translate-y-1/2 lg:absolute lg:top-1/2">
+              <h4 class="lg:text-lg 2xl:text-2xl font-bold pb-px">FarmaCoV Test IgG</h4>
+              <p class="pb-5 2xl:text-xl">
+                Es un test rápido serológico (producto para diagnóstico de uso in vitro), que utiliza un ensayo inmunocromatográfico para <span class="dark-highlight">detectar anticuerpos</span> IgG resultantes de la exposición a <span class="dark-highlight">SARS-CoV-2</span> de manera cualitativa en <span class="dark-highlight">muestras de sangre capilar y suero de origen humano</span>. El mismo es exclusivo de <span class="dark-highlight">uso profesional</span> y fue diseñado para ser
+                utilizado como ensayo auxiliar en la detección de infecciones provocadas por el <span class="dark-highlight">coronavirus</span>. Puede ser utilizado como prueba complementaria a la de <span class="dark-highlight">qRT-PCR</span>.
+              </p>
+            </li>
+            <li class="lg:opacity-0 my-5 lg:my-0 lg:pl-10 transform lg:-translate-y-1/2 lg:absolute lg:top-[60%]">
+              <h4 class="lg:text-lg 2xl:text-2xl font-bold pb-px">FarmacoV Test IgM/ IgG</h4>
+              <p class="pb-5 2xl:text-xl">
+                Es un test rápido serológico (producto para diagnóstico de uso in vitro), que utiliza un ensayo inmunocromatográfico para <span class="dark-highlight">detectar anticuerpos IgG y anticuerpos IgM</span> resultantes de la exposición a <span class="dark-highlight">SARS-CoV-2</span> de manera cualitativa en <span class="dark-highlight">muestras de sangre capilar y suero de origen humano</span>. El mismo es exclusivo de uso profesional y fue diseñado para ser utilizado como ensayo
+                auxiliar en la detección de infecciones provocadas por el <span class="dark-highlight">coronavirus</span>. Puede ser utilizado como prueba complementaria a la de <span class="dark-highlight">qRT-PCR</span>.
+              </p>
+            </li>
+            <li class="lg:opacity-0 my-5 lg:my-0 lg:pl-10 transform lg:-translate-y-1/2 lg:absolute lg:top-[60%] pb-5 2xl:text-xl">La <span class="dark-highlight">sensibilidad</span> de FarmaCoV Test IgM/IgG es 95% y <span class="dark-highlight">especificidad</span> 87%.</li>
+          </ul>
+        </div>
+        <div id="dev-sustent" class="dev-sect my-20 lg:my-0 px-5 lg:px-0 lg:min-h-screen lg:grid grid-cols-2 gap-40 items-center relative transform lg:-translate-y-10">
+          <div class="line-container flex justify-center items-center">
+            <svg class="line line4" viewBox="-29 15 180 1117" fill="none" preserveAspectRatio="xMidYMax meet">
+              <path d="M64.7713 0V1067.45C64.7713 1067.45 104.635 1103.49 118.771 1103.49C132.906 1103.49 142.231 1092.54 137.955 1082.17C134.78 1074.47 127.001 1072.03 118.771 1073.03C89.4904 1076.59 68.0361 1089.78 31.4341 1103.49C19.278 1108.04 -0.898379 1102.66 1.14387 1089.78C2.81107 1079.27 14.4177 1074.89 24.8712 1076.59C59.2 1082.17 67.1901 1107.86 102.529 1117" stroke="var(--farmacoop-light-blue)" stroke-width="10" />
+            </svg>
+          </div>
+          <h3 class="text-2xl lg:text-5xl">Sustentabilidad</h3>
+          <p class="my-5 lg:my-0 lg:pl-10 2xl:text-xl">Uno de nuestros objetivos es implementar una nueva <span class="dark-highlight">forma de trabajo sustentable</span> que nos permita ser parte de grandes proyectos para el <span class="dark-highlight">cuidado del medio ambiente y la calidad de vida</span> de la población. Estamos totalmente comprometidos con el manejo y uso de los recursos naturales.</p>
+        </div>
+      </div>
+      <div id="dev-others" class="w-4/5 max-w-[95rem] flex flex-col items-center justify-center gap-10 m-auto py-20">
+        <h3 class="new-section-title">Experiencia junto a otres</h3>
+        <div class="text-lg grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 items-center gap-3 lg:gap-10">
+          <a class="others-link" href="https://www.acumar.gob.ar/" title="Autoridad de Cuenca Matanza y Riachuelo" target="_blank">
+            <p>ACUMAR</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://www.argentina.gob.ar/ciencia/agencia" title="Agencia Nacional de Promoción de la Investigación, el Desarrollo Tecnológico y la Innovación" target="_blank">
+            <p>Agencia I+D+i</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://www.conicet.gov.ar/" target="_blank">
+            <p>CONICET</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://www.fi.uba.ar/" target="_blank">
+            <p>FIUBA</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://www.fundacioncredicoop.com.ar/" target="_blank">
+            <p>Fundación Banco Credicoop</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://www.mamacultivaargentina.org/" target="_blank">
+            <p>Mamá Cultiva Argentina</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://es-la.facebook.com/MovimientoNacionalDeEmpresasRecuperadasMner/" title="Movimiento Nacional de Empresas Recuperadas" target="_blank">
+            <p>MNER</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://www.uba.ar/#/" target="_blank">
+            <p>UBA</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://undav.edu.ar/index.php" target="_blank">
+            <p>UNDAV</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="http://www.unla.edu.ar/" target="_blank">
+            <p>UNLA</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://unlp.edu.ar/" target="_blank">
+            <p>UNLP</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+          <a class="others-link" href="https://www.unsam.edu.ar/" target="_blank">
+            <p>UNSAM</p>
+            <img src="img/contact/external-link.svg" />
+          </a>
+        </div>
+      </div>
+      <div id="tell-us" class="px-5 lg:px-0 py-20">
+        <h3 class="new-section-title">Acercate con tu idea</h3>
+        <p class="new-section-text pt-5">
+          Sabemos que la innovación, creatividad y compromiso es gran parte de la ciencia que contribuye día a día a una mejor calidad de vida, por eso queremos seguir sumando a nuestro equipo nuevas ideas que impulsen a desarrollar productos innovadores. Podés contactarnos por mail a <a href="mailto:info@farmacoop.org" target="_blank" class="text-farmacoop-blue font-bold">info@farmacoop.org </a>y por teléfono/whatsapp al
+          <a href="https://wa.me/1132447948" target="_blank" class="text-farmacoop-blue font-bold">11-3244-7948</a>.
+        </p>
+        <div class="flex justify-center items-center gap-14">
+          <a href="mailto:info@farmacoop.org" target="_blank">
+            <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-24 h-24 flex justify-center items-center">
+              <img class="w-1/2 isolate" src="img/contact/mail.svg" />
+            </figure>
+          </a>
+          <a href="https://wa.me/1132447948" target="_blank">
+            <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-24 h-24 flex justify-center items-center">
+              <img class="w-1/2 isolate" src="img/contact/whatsapp.svg" />
+            </figure>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="home-container -my-6 bg-[#fff] text-[#777777] pt-20 pb-5">
+      <div class="w-full px-20 sm:grid sm:grid-cols-3 gap-20">
+        <div class="">
+          <a href="index.html"><img class="w-44 min-w-[7rem] m-auto mb-5" src="img/logo-white.svg" /></a>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+            <a href="https://twitter.com/farmacoop_" target="_blank">
+              <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-16 h-16 flex justify-center items-center">
+                <img class="w-1/2 isolate" src="img/contact/twitter.svg" />
+              </figure>
+            </a>
+            <a href="https://www.instagram.com/farmacoop_/" target="_blank">
+              <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-16 h-16 flex justify-center items-center">
+                <img class="w-1/2 isolate" src="img/contact/instagram.svg" />
+              </figure>
+            </a>
+            <a href="mailto:info@farmacoop.org" target="_blank">
+              <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-16 h-16 flex justify-center items-center">
+                <img class="w-1/2 isolate" src="img/contact/mail.svg" />
+              </figure>
+            </a>
+            <a href="https://wa.me/+5491130743155" target="_blank">
+              <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-16 h-16 flex justify-center items-center">
+                <img class="w-1/2 isolate" src="img/contact/whatsapp.svg" />
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="py-20 sm:py-0 sm:col-span-2">
+          <h4 class="border-b mb-3 border-black">Menu</h4>
+          <ul class="md:grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-8 gap-x-5 leading-5">
+            <a href="cooperative.html"><li class="my-2 md:my-1">FARMACOOP AHORA</li></a>
+            <a href="history.html"><li class="my-2 md:my-1">FARMACOOP HISTORIA</li></a>
+            <a href="products.html"><li class="my-2 md:my-1">PRODUCTOS</li></a>
+            <a href="development.html"><li class="my-2 md:my-1">DESARROLLO</li></a>
+            <a href="services.html"><li class="my-2 md:my-1">OPERADORES LOGÍSTICOS</li></a>
+            <a href="product-service.html"><li class="my-2 md:my-1">SERVICIOS PRODUCTIVOS</li></a>
+            <a href="contact.html"><li class="my-2 md:my-1">CONTACTO</li></a>
+            <a href="aqualane.html"><p class="my-2 md:my-1">AQUALANE</p></a>
+          </ul>
+        </div>
+      </div>
+      <div class="py-10 sm:pt-20 sm:pb-5 w-full text-center">
+        <p class="copyright"></p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

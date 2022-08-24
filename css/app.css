@@ -1,0 +1,541 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "fonts.css";
+@import "colors.css";
+
+@layer utilities {
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+.close-menu {
+  @apply -translate-y-5 opacity-0 pointer-events-none;
+}
+.open-menu {
+  @apply translate-y-0 opacity-100 pointer-events-auto transition-all duration-500;
+}
+.dropdown ul.hide {
+  @apply invisible pointer-events-none opacity-0 transform -translate-x-20 lg:translate-x-0 lg:-translate-y-4;
+}
+.dropdown ul.show {
+  @apply transform -translate-x-32 lg:translate-x-0;
+}
+.dropdown ul.show {
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  -webkit-transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  -ms-transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+.dropdown:hover ul {
+  @apply transform lg:translate-y-0;
+}
+.menu-option ul li {
+  @apply relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-5 after:border-t-2 after:border-black isolate hover:after:w-1/2 after:transition-all after:duration-500;
+}
+
+/* Titles */
+.main-page {
+  @apply bg-gradient-to-b from-white via-[#d4eaf1] to-white;
+}
+.aqualane-contact-icon {
+  @apply w-14 lg:right-20 z-50;
+}
+.contact-icon {
+  @apply w-16 2xl:w-20 fixed bottom-5 right-5 z-50;
+}
+.page-title-container {
+  @apply lg:w-4/5 xl:w-2/3 pb-20 lg:pb-32 mt-32 lg:mt-48 2xl:mt-72 px-5 md:px-32 2xl:px-40;
+}
+.page-title {
+  @apply text-farmacoop-dark-blue text-5xl md:text-7xl pb-6;
+}
+.page-subtitle {
+  @apply md:text-xl 2xl:text-2xl font-light;
+}
+.new-section-title {
+  @apply text-center text-2xl lg:text-4xl pb-4;
+}
+.new-section-text {
+  @apply w-4/5 max-w-[43rem] text-xl 2xl:text-2xl font-light pb-8 m-auto;
+}
+
+/* Buttons */
+.link-button {
+  @apply bg-[#1c7ea5] text-white rounded-md px-5 py-3 text-center hover:bg-[#168dbb] transition-colors duration-500 2xl:text-xl;
+}
+.more-button {
+  @apply bg-farmacoop-dark-blue text-white rounded-md px-4 py-2 text-center mt-3;
+}
+
+/* Aqualane slider*/
+.items {
+  @apply w-full h-[25rem];
+}
+.items .item {
+  @apply 2xl:w-[40rem] lg:w-[30rem] w-80 2xl:h-[40rem] lg:h-[30rem] h-80
+  absolute top-1/4 lg:top-1/2 left-1/2 rounded-full overflow-hidden transition-all duration-500 opacity-0 transform -translate-x-1/2;
+}
+.item img {
+  @apply w-full h-full object-cover;
+}
+.item.active {
+  @apply opacity-100 z-50 shadow-md transform -translate-y-1/3 -translate-x-1/2 lg:-translate-y-1/2;
+}
+.item.prev {
+  @apply z-20 opacity-50 transform -translate-x-full;
+}
+.item.next {
+  @apply z-20 opacity-50 transform translate-x-0 translate-y-0;
+}
+.items .button-container {
+  @apply w-full h-full z-50 transform -translate-y-10 lg:translate-y-0 absolute flex justify-between items-center px-5 lg:px-16;
+}
+.button-container img {
+  @apply w-12 h-12 cursor-pointer opacity-75 hover:opacity-100 transition-all duration-500;
+}
+
+/* Highlights */
+.light-highlight {
+  @apply text-white font-bold;
+}
+.dark-highlight {
+  @apply text-farmacoop-dark-blue font-bold;
+}
+
+/* floating balls */
+.ball {
+  position: relative;
+  border: #34a9d6 solid 0.25rem;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 15px #34a9d6, inset 0 0 25px #34a9d6;
+  filter: blur(0.15rem);
+  -webkit-filter: blur(0.15rem);
+}
+.ball:nth-of-type(1) {
+  animation: floating 10s ease-in-out infinite;
+  -webkit-animation: floating 10s ease-in-out infinite;
+}
+.ball:nth-of-type(2) {
+  animation: floating 12s ease-in-out infinite;
+  -webkit-animation: floating 12s ease-in-out infinite;
+}
+.ball:nth-of-type(3) {
+  animation: floating 15s ease-in-out infinite;
+  -webkit-animation: floating 15s ease-in-out infinite;
+}
+.ball div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  background-color: #5cc2eb;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  filter: blur(0.5rem);
+  -webkit-filter: blur(0.5rem);
+  transition: all 100ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -ms-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+}
+/* Aqualane promo */
+.aqualane-promo {
+  background-image: url("../img/Ellipse.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+.aqualane-promo:hover {
+  transform: scale(1.5) translate(-10%, 10%) rotate(-5deg);
+  -webkit-transform: scale(1.5) translate(-10%, 10%) rotate(-5deg);
+  -moz-transform: scale(1.5) translate(-10%, 10%) rotate(-5deg);
+  -ms-transform: scale(1.5) translate(-10%, 10%) rotate(-5deg);
+  -o-transform: scale(1.5) translate(-10%, 10%) rotate(-5deg);
+}
+.parallax {
+  background-image: url("../img/aqualaneBanner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Flip banner */
+.card-container {
+  @apply w-full h-full m-auto;
+}
+.card-container {
+  perspective: 1000px;
+}
+.card {
+  @apply w-full h-full relative transition-transform duration-500 before:content-[''] before:bg-center before:bg-cover before:bg-no-repeat;
+}
+.card {
+  transform-style: preserve-3d;
+}
+.card::before,
+.card-back {
+  @apply absolute top-0 w-full h-full;
+}
+.card::before,
+.card-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.card-container:nth-of-type(1) .card::before {
+  @apply bg-product-7;
+}
+.card-container:nth-of-type(2) .card::before {
+  @apply bg-product-2;
+}
+.card-container:nth-of-type(3) .card::before {
+  @apply bg-product-5;
+}
+.card-container:nth-of-type(4) .card::before {
+  @apply bg-product-1;
+}
+.card-container:nth-of-type(5) .card::before {
+  @apply bg-product-3;
+}
+.card-container:nth-of-type(6) .card::before {
+  @apply bg-product-4;
+}
+.card-container:nth-of-type(7) .card::before {
+  @apply bg-product-6;
+}
+.card-back {
+  @apply bg-farmacoop-light-blue;
+}
+.card-back {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+}
+.card-container:hover .card {
+  @apply transform lg:rotate-y-180;
+}
+
+/* Product list */
+.product-container {
+  @apply flex flex-col sm:grid grid-cols-3 lg:grid-cols-2 pb-16 sm:p-0 h-screen;
+}
+.product-container:nth-of-type(2n + 1) {
+  @apply flex-col-reverse;
+}
+.product-img {
+  @apply col-span-2 lg:col-span-1 bg-cover bg-center h-3/4 sm:h-full w-[95%] sm:w-full m-auto rounded-xl shadow-inner border border-zinc-300 sm:border-none sm:shadow-none sm:rounded-none sm:bg-left bg-fixed bg-no-repeat sm:bg-contain;
+}
+.product-container:nth-of-type(2n) .product-img {
+  @apply sm:bg-right;
+}
+.product-container:nth-of-type(1) .product-img {
+  background-image: url(../img/products/aqualane.jpg);
+}
+.product-container:nth-of-type(2) .product-img {
+  background-image: url(../img/products/alcohol.jpg);
+}
+.product-container:nth-of-type(3) .product-img {
+  background-image: url(../img/products/alcohol-5.jpg);
+}
+.product-container:nth-of-type(4) .product-img {
+  background-image: url(../img/products/alcohol-gel.jpg);
+}
+.product-container:nth-of-type(5) .product-img {
+  background-image: url(../img/products/alcohol-gel-5.jpg);
+}
+.product-container:nth-of-type(6) .product-img {
+  background-image: url(../img/products/test-2.jpg);
+}
+.product-container:nth-of-type(7) .product-img {
+  background-image: url(../img/products/test-4.jpg);
+}
+/* Ahora */
+.texts-coop {
+  @apply lg:flex lg:flex-col lg:px-20 pb-20 m-auto font-light lg:text-xl 2xl:text-2xl;
+}
+.coop-text {
+  @apply min-h-[70vh] lg:flex lg:justify-between lg:items-center;
+}
+.coop-text p {
+  @apply lg:w-1/2 py-10 px-5 lg:py-20 md:px-20 xl:px-10;
+}
+.img-circle {
+  @apply m-auto relative w-80 xl:w-[30rem] h-80 xl:h-[30rem] rounded-full shadow-lg bg-no-repeat bg-cover bg-center transform translate-y-[15%];
+}
+.coop-text:nth-of-type(2n + 1) .img-circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 4rem;
+  height: 4rem;
+  background-color: #5cc2eb;
+  border-radius: 100%;
+  box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.2), inset 5px 5px 10px #ffffff;
+  animation: floating 10s ease-in-out infinite;
+  -webkit-animation: floating 10s ease-in-out infinite;
+}
+.coop-text:nth-of-type(2n) .img-circle:after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 85%;
+  width: 4rem;
+  height: 4rem;
+  background-color: #5cc2eb;
+  border-radius: 100%;
+  box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.2), inset 2px 2px 10px #ffffff;
+  animation: floating 5s ease-in-out infinite;
+  -webkit-animation: floating 5s ease-in-out infinite;
+}
+.coop-text:nth-of-type(1) .img-circle {
+  background-image: url(../img/deposito.jpg);
+}
+.coop-text:nth-of-type(2) .img-circle {
+  background-image: url(../img/doc.jpeg);
+}
+.coop-text:nth-of-type(3) .img-circle {
+  background-image: url(../img/IMG-20210723-WA0002.jpg);
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0.5rem);
+    -webkit-transform: translate(0, 0.5rem);
+    -moz-transform: translate(0, 0.5rem);
+    -ms-transform: translate(0, 0.5rem);
+    -o-transform: translate(0, 0.5rem);
+  }
+  50% {
+    transform: translate(0, -0.5rem);
+    -webkit-transform: translate(0, -0.5rem);
+    -moz-transform: translate(0, -0.5rem);
+    -ms-transform: translate(0, -0.5rem);
+    -o-transform: translate(0, -0.5rem);
+  }
+  100% {
+    transform: translate(0, 0.5rem);
+    -webkit-transform: translate(0, 0.5rem);
+    -moz-transform: translate(0, 0.5rem);
+    -ms-transform: translate(0, 0.5rem);
+    -o-transform: translate(0, 0.5rem);
+  }
+}
+/* Historia */
+.history {
+  @apply xl:flex flex-wrap flex-col xl:h-screen;
+}
+.module {
+  @apply xl:h-full lg:flex xl:items-center justify-around gap-5 xl:gap-10 p-5 md:px-20 md:py-10 lg:py-5;
+}
+.module:nth-last-of-type(1) {
+  @apply bg-farmacoop-dark-blue;
+}
+.module:nth-last-of-type(2) {
+  @apply bg-gradient-to-b xl:bg-gradient-to-r from-farmacoop-blue to-farmacoop-dark-blue;
+}
+.module:nth-last-of-type(3) {
+  @apply bg-gradient-to-b xl:bg-gradient-to-r from-farmacoop-light-blue to-farmacoop-blue;
+}
+.module:nth-last-of-type(4) {
+  @apply bg-farmacoop-light-blue;
+}
+.history-img {
+  @apply md:w-4/5 h-80 lg:h-auto xl:h-[25rem] m-auto lg:m-0 lg:w-1/2 rounded-b-none lg:rounded-b-lg rounded-t-lg shadow-lg;
+}
+
+.module:nth-of-type(1) .history-img {
+  @apply bg-cover bg-no-repeat bg-center bg-history-4;
+}
+.module:nth-of-type(2) .history-img {
+  @apply bg-cover bg-no-repeat bg-center bg-history-3;
+}
+.module:nth-of-type(3) .history-img {
+  @apply bg-cover bg-no-repeat bg-center bg-history-1;
+}
+.module:nth-of-type(4) .history-img {
+  @apply bg-cover bg-no-repeat bg-center bg-history-2;
+}
+.history-text {
+  @apply text-black bg-transp-white p-8 rounded-t-none lg:rounded-t-lg rounded-b-lg md:w-4/5 lg:w-1/2 shadow-lg m-auto lg:m-0;
+}
+.history-text h3 {
+  @apply text-center text-xl 2xl:text-2xl pb-1 mb-2 font-bold border-b border-zinc-400;
+}
+.history-text p {
+  @apply 2xl:text-xl;
+}
+
+/* Service O.L*/
+.hover-icon {
+  @apply rounded-2xl py-5 lg:py-0 my-5 lg:my-0 pr-5 shadow bg-[white] grid grid-cols-4 items-center;
+}
+.hover-icon p {
+  @apply col-span-3 text-lg py-5 2xl:py-10 leading-tight xl:text-xl 2xl:text-2xl;
+}
+.hover-icon img {
+  @apply m-auto;
+}
+.service-list img {
+  background-color: white;
+  transition: opacity 500ms ease-in-out;
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -ms-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+}
+/* Service PROD */
+.container-service-info {
+  @apply shadow-sm my-5 md:m-0 rounded-lg p-7 lg:p-10 bg-white;
+}
+.container-service-info h4 {
+  @apply font-bold pb-2 leading-tight text-lg;
+}
+.container-service-info p {
+  @apply leading-tight;
+}
+/* Enviar */
+.fly img {
+  animation: animate 1s ease-in-out;
+  -webkit-animation: animate 1s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1) rotate(0deg) translate(0px, 0px);
+    -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px);
+    -moz-transform: scale(1) rotate(0deg) translate(0px, 0px);
+    -ms-transform: scale(1) rotate(0deg) translate(0px, 0px);
+    -o-transform: scale(1) rotate(0deg) translate(0px, 0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.75) rotate(-10deg) translate(200px, -150px);
+    -webkit-transform: scale(0.75) rotate(-10deg) translate(200px, -150px);
+    -moz-transform: scale(0.75) rotate(-10deg) translate(200px, -150px);
+    -ms-transform: scale(0.75) rotate(-10deg) translate(200px, -150px);
+    -o-transform: scale(0.75) rotate(-10deg) translate(200px, -150px);
+    opacity: 0;
+  }
+}
+
+/* Desarrollo */
+.line-container {
+  @apply absolute top-0 left-0 w-full h-full text-center overflow-hidden hidden lg:flex justify-center items-center;
+}
+.line-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  height: 100%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+}
+.vision-ball::after {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.253), inset 0 0 20px rgba(255, 255, 255, 0.7);
+  animation: float-vision 5s ease-in-out infinite;
+  -webkit-animation: float-vision 5s ease-in-out infinite;
+}
+@keyframes float-vision {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+.others-link {
+  @apply bg-white p-5 pr-12 rounded-lg shadow-sm relative;
+}
+.others-link p {
+  @apply font-semibold leading-tight md:leading-tight md:text-xl col-span-8;
+}
+.others-link img {
+  @apply absolute top-2 right-2;
+}
+
+/* Aqualane */
+.aqualane-contact-link {
+  @apply bg-white m-auto shadow-lg rounded-full w-28 h-28 flex justify-center items-center relative overflow-hidden;
+}
+
+/* Hover social media */
+.liquid {
+  transform: scale(2.25) translate(-10%, -40%) rotate(30deg);
+  -webkit-transform: scale(2.25) translate(-10%, -40%) rotate(30deg);
+  -moz-transform: scale(2.25) translate(-10%, -40%) rotate(30deg);
+  -ms-transform: scale(2.25) translate(-10%, -40%) rotate(30deg);
+  -o-transform: scale(2.25) translate(-10%, -40%) rotate(30deg);
+}
+.aqualane-contact-link:hover .liquid {
+  transform: scale(2) translate(-40%, -35%) rotate(0deg);
+  -webkit-transform: scale(2) translate(-40%, -35%) rotate(0deg);
+  -moz-transform: scale(2) translate(-40%, -35%) rotate(0deg);
+  -ms-transform: scale(2) translate(-40%, -35%) rotate(0deg);
+  -o-transform: scale(2) translate(-40%, -35%) rotate(0deg);
+}
+.aqualane-contact-link .liquid {
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+}

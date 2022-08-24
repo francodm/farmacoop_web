@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>Farmacoop</title>
+  </head>
+  <body class="relative font-rubik">
+    <header>
+      <nav id="nav" class="absolute top-0 w-full z-50">
+        <div class="font-medium 2xl:text-lg isolate flex justify-end items-center relative">
+          <a href="index.html"><img class="select-none absolute top-5 lg:top-7 2xl:top-10 left-5 lg:left-10 2xl:left-16 w-36 lg:w-42 xl:w-48 2xl:w-56" src="img/logo-black.svg" alt="Logo farmacoop" /></a>
+          <img id="burger" class="lg:hidden w-7 mx-5 my-5" src="img/menu.svg" alt="menu" />
+          <ul id="menu-options" class="close-menu w-74 lg:w-auto bg-white rounded-b-xl lg:bg-transparent text-right lg:text-center transform lg:transform-none lg:opacity-100 lg:pointer-events-auto absolute lg:relative top-full lg:top-10 2xl:top-16 lg:right-28 xl:right-48 border-t-2 border-t-black lg:flex gap-6 xl:gap-10 px-5">
+            <li class="menu-option pt-5 lg:pt-0 dropdown relative flex flex-row-reverse lg:flex-row group">
+              FARMACOOP<img class="drop transform transition-transform duration-500 lg:rotate-0" src="img/down.svg" />
+              <ul class="hide absolute top-0 lg:top-full left-0 lg:left-0 lg:right-auto text-left font-normal leading-tight min-w-full">
+                <div class="min-w-full rounded-b-lg bg-white lg:bg-transparent">
+                  <a href="cooperative.html"><li class="mt-2 pt-1 pb-3 px-2">AHORA</li></a>
+                  <a href="history.html"><li class="pt-1 pb-3 px-2">HISTORIA</li></a>
+                </div>
+              </ul>
+            </li>
+            <a href="products.html"><li class="menu-option pt-5 lg:pt-0">PRODUCTOS</li></a>
+            <a href="development.html"><li class="menu-option pt-5 lg:pt-0">DESARROLLO</li></a>
+            <li class="menu-option pt-5 lg:pt-0 dropdown relative flex flex-row-reverse lg:flex-row group">
+              SERVICIOS<img class="drop transform transition-transform duration-500 lg:rotate-0" src="img/down.svg" />
+              <ul class="hide absolute top-0 lg:top-full left-0 lg:left-0 lg:right-auto text-left font-normal leading-tight min-w-full">
+                <div class="min-w-full rounded-b-lg bg-white lg:bg-transparent">
+                  <a href="services.html"><li class="mt-2 pt-1 pb-3 px-2">OPERADORES LOGÍSTICOS</li></a>
+                  <a href="product-service.html"><li class="pt-1 pb-3 px-2">SERVICIOS PRODUCTIVOS</li></a>
+                </div>
+              </ul>
+            </li>
+            <a href="contact.html"><li class="menu-option pt-5 lg:pt-0">CONTACTO</li></a>
+            <a class="lg:hidden" href="aqualane.html"><li class="menu-option mt-5 py-2 border-t border-zinc-300">AQUALANE</li></a>
+          </ul>
+          <div class="hidden lg:block h-32 w-32 2xl:w-60 2xl:h-60 absolute top-0 right-0 bg-transparent overflow-hidden">
+            <a href="aqualane.html" class="aqualane absolute top-0 right-0"><img class="aqualane-promo w-20 2xl:w-36" src="img/pomosAqualane.png" alt="Aquealane prop" /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-page">
+      <div class="contact-icon">
+        <a href="https://wa.me/+5491130743155" target="_blank">
+          <figure class="flex justify-center items-center">
+            <img class="isolate" src="img/whatsapp.svg" />
+          </figure>
+        </a>
+      </div>
+      <div class="lg:min-h-screen bg-gradient-to-b from-white to-[#dce6f3] lg:py-28 lg:grid lg:grid-cols-2 overflow-hidden isolate px-5 sm:px-24">
+        <div class="pt-32 lg:py-0 flex justify-center item-center flex-col z-50">
+          <h1 class="text-farmacoop-dark-blue text-5xl pb-4 md:text-7xl xl:text-8xl 2xl:text-9xl lg:py-10">Salud para todo el país</h1>
+          <h2 class="page-subtitle">Somos un laboratorio cooperativo que se gestó luego de la disolución de los <span class="dark-highlight">Laboratorios Roux Ocefa</span> en 2019. Comercializamos productos cosméticos y de tecnología médica, como así también ofrecemos <span class="dark-highlight">servicios a terceros</span> de producción y <span class="dark-highlight">operación logística</span>. Estamos en constante búsqueda de nuevos desarrollos tecnológicos relacionados a la salud.</h2>
+        </div>
+        <div class="items select-none relative transform translate-y-[10%] md:translate-y-[25%] 2xl:translate-y-[70%]">
+          <div class="item active">
+            <img src="img/alcohol.jpeg" />
+          </div>
+          <div class="item next">
+            <img src="img/alcoholTest.jpg" />
+          </div>
+          <div class="item">
+            <img src="img/aqualane.png" />
+          </div>
+          <div class="item">
+            <img src="img/farmacoop.jpg" />
+          </div>
+          <div class="item prev">
+            <img src="img/aqualane/aqualane-lavanda.jpg" />
+          </div>
+          <div class="button-container">
+            <div class="button"><img src="img/angle-left-solid.svg" /></div>
+            <div class="button"><img src="img/angle-right-solid.svg" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:min-h-screen px-5 sm:px-20 py-20 lg:grid lg:grid-cols-2 gap-40 relative bg-[#0f5371] text-white overflow-hidden">
+        <div class="isolate transform -translate-y-1/2 absolute top-1/2 left-[40%] opacity-25 lg:opacity-100">
+          <div class="ball overflow-hidden m-5 w-20 h-20 2xl:w-32 2xl:h-32 bg-[#34A9D6] rounded-full"><div></div></div>
+          <div class="ball overflow-hidden m-10 w-32 h-32 2xl:w-44 2xl:h-44 bg-[#34A9D6] shadow-white shadow-lg rounded-full"><div></div></div>
+          <div class="ball overflow-hidden m-10 w-20 h-20 2xl:w-32 2xl:h-32 bg-[#34A9D6] shadow-white shadow-lg rounded-full"><div></div></div>
+        </div>
+        <div class="lg:m-auto w-full flex flex-col items-center isolate">
+          <h2 class="font-bold text-2xl lg:text-5xl lg:leading-tight text-center">Sobre Farmacoop</h2>
+          <a href="cooperative.html" class="my-7 link-button">Quienes somos</a>
+        </div>
+        <div class="isolate m-auto text-xl lg:text-lg 2xl:text-2xl">
+          <p class="my-3 2xl:my-8">Somos un laboratorio cooperativo, surgido luego de la quiebra y disolución de <span class="light-highlight">Laboratorios Roux Ocefa</span>.</p>
+          <p class="my-3 2xl:my-8">En la actualidad producimos y comercializamos <span class="light-highlight">productos médicos y cosméticos</span>, como así también ofrecemos servicios de <span class="light-highlight">Operador Logístico de medicamentos y de Producción</span> para terceros.</p>
+          <p class="my-3 2xl:my-8">Cumplimos con todas las normativas dispuestas por la <span class="light-highlight">ANMAT</span>, asegurando que cada uno de nuestros productos cumplan con los estándares de <span class="light-highlight">calidad, eficiciencia y proteccion</span> de la salud dispuestos por el organismo de control.</p>
+          <p class="my-3 2xl:my-8">Ofrecemos soluciones en materia de salud, priorizando siempre la <span class="light-highlight">accesibilidad y la sustentabilidad</span> como valores principales.</p>
+        </div>
+      </div>
+      <div class="-my-6 parallax min-h-[60vh] overflow-hidden"></div>
+      <div class="py-20 px-5 sm:px-20 bg-[#B8E8FF] flex justify-center items-center flex-col">
+        <h4 class="new-section-title">Juntos desarrollamos</h4>
+        <p class="new-section-text">Somos un equipo especializado en la tecnología de lateral flow que se destaca por la tecnología en equipamiento para desarrollos en técnicas de <span class="dark-highlight">Lateral Flow</span>. Contamos con técnicos y profesionales altamente capacitados para <span class="dark-highlight">innovar, analizar e investigar</span> nuevos productos y ofrecer <span class="dark-highlight">soluciones eficientes</span> en materia de salud.</p>
+        <a href="development.html" class="link-button">Desarrollo</a>
+      </div>
+    </main>
+    <footer class="home-container -my-6 bg-[#fff] text-[#777777] pt-20 pb-5">
+      <div class="w-full px-20 sm:grid sm:grid-cols-3 gap-20">
+        <div class="">
+          <a href="index.html"><img class="w-44 min-w-[7rem] m-auto mb-5" src="img/logo-white.svg" /></a>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+            <a href="https://twitter.com/farmacoop_" target="_blank">
+              <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-16 h-16 flex justify-center items-center">
+                <img class="w-1/2 isolate" src="img/contact/twitter.svg" />
+              </figure>
+            </a>
+            <a href="https://www.instagram.com/farmacoop_/" target="_blank">
+              <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-16 h-16 flex justify-center items-center">
+                <img class="w-1/2 isolate" src="img/contact/instagram.svg" />
+              </figure>
+            </a>
+            <a href="mailto:info@farmacoop.org" target="_blank">
+              <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-16 h-16 flex justify-center items-center">
+                <img class="w-1/2 isolate" src="img/contact/mail.svg" />
+              </figure>
+            </a>
+            <a href="https://wa.me/+5491130743155" target="_blank">
+              <figure class="hover:shadow-lg transform hover:scale-105 transition-all duration-300 m-auto shadow-md rounded-full w-16 h-16 flex justify-center items-center">
+                <img class="w-1/2 isolate" src="img/contact/whatsapp.svg" />
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="py-20 sm:py-0 sm:col-span-2">
+          <h4 class="border-b mb-3 border-black">Menu</h4>
+          <ul class="md:grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-8 gap-x-5 leading-5">
+            <a href="cooperative.html"><li class="my-2 md:my-1">FARMACOOP AHORA</li></a>
+            <a href="history.html"><li class="my-2 md:my-1">FARMACOOP HISTORIA</li></a>
+            <a href="products.html"><li class="my-2 md:my-1">PRODUCTOS</li></a>
+            <a href="development.html"><li class="my-2 md:my-1">DESARROLLO</li></a>
+            <a href="services.html"><li class="my-2 md:my-1">OPERADORES LOGÍSTICOS</li></a>
+            <a href="product-service.html"><li class="my-2 md:my-1">SERVICIOS PRODUCTIVOS</li></a>
+            <a href="contact.html"><li class="my-2 md:my-1">CONTACTO</li></a>
+            <a href="aqualane.html"><p class="my-2 md:my-1">AQUALANE</p></a>
+          </ul>
+        </div>
+      </div>
+      <div class="py-10 sm:pt-20 sm:pb-5 w-full text-center">
+        <p class="copyright"></p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
