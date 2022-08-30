@@ -115,41 +115,6 @@ function parallax() {
     });
   });
 }
-function service() {
-  if (document.getElementById("service")) {
-    const icons = document.querySelectorAll(".hover-icon");
-    icons.forEach((icon) => {
-      icon.addEventListener("mouseover", () => {
-        icon.querySelector("img.absolute").style.opacity = 1;
-      });
-      icon.addEventListener("mouseout", () => {
-        icon.querySelector("img.absolute").style.opacity = 0;
-      });
-    });
-    const send = document.querySelector(".send");
-    document.forms["service-form"].addEventListener("submit", function (e) {
-      e.preventDefault();
-      form = this;
-      send.classList.add("fly");
-      setTimeout(function () {
-        form.submit();
-      }, 1000);
-    });
-  }
-}
-function contact() {
-  if (document.getElementById("contact-form")) {
-    const send = document.querySelector(".send");
-    document.forms["contact-form"].addEventListener("submit", function (e) {
-      e.preventDefault();
-      form = this;
-      send.classList.add("fly");
-      setTimeout(function () {
-        form.submit();
-      }, 1000);
-    });
-  }
-}
 document.addEventListener(
   "DOMContentLoaded",
   (function () {
@@ -158,7 +123,5 @@ document.addEventListener(
     sliderFarmacoop();
     lightInBalls();
     parallax();
-    service();
-    contact();
   })()
 );
