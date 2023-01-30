@@ -16,7 +16,7 @@
 }
 
 html {
-  scroll-behavior: smooth !important;
+  @apply scroll-smooth;
 }
 .close-menu {
   @apply -translate-y-5 opacity-0 pointer-events-none;
@@ -394,9 +394,9 @@ html {
   @apply 2xl:text-xl;
 }
 
-/* Service O.L*/
+/* Service O.L */
 .hover-icon {
-  @apply rounded-2xl py-5 lg:py-0 my-5 lg:my-0 pr-5 shadow bg-[white] grid grid-cols-4 items-center;
+  @apply rounded-2xl py-5 lg:py-0 my-5 lg:my-0 pr-5 shadow bg-white grid grid-cols-4 items-center;
 }
 .hover-icon p {
   @apply col-span-3 text-lg py-5 2xl:py-10 leading-tight xl:text-xl 2xl:text-2xl;
@@ -405,7 +405,6 @@ html {
   @apply m-auto;
 }
 .service-list img {
-  background-color: white;
   transition: opacity 500ms ease-in-out;
   -webkit-transition: opacity 500ms ease-in-out;
   -moz-transition: opacity 500ms ease-in-out;
